@@ -1,4 +1,4 @@
-import 'package:language_study/model/JsonDecoder.dart';
+import 'package:language_study/model/jsonDecoder/JsonDecoder.dart';
 
 class User extends JsonDecoderObject<User>{
   int _id;

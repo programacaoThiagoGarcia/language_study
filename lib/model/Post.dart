@@ -1,4 +1,4 @@
-import 'package:language_study/model/JsonDecoder.dart';
+import 'package:language_study/model/jsonDecoder/JsonDecoder.dart';
 class Post extends JsonDecoderObject<Post>{
   String _userId;
   int _id;
