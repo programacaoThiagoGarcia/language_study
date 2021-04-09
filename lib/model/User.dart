@@ -52,18 +52,18 @@ class User extends JsonDecoderObject<User>{
     _username = json['username'];
     _email = json['email'];
     _address =
-        json['address'] != null ? new Address.fromJson(json['address']) : null;
+        json['address'] != null ?  Address.fromJson(json['address']) : null;
     _phone = json['phone'];
     _website = json['website'];
     _company =
-        json['company'] != null ? new Company.fromJson(json['company']) : null;
+        json['company'] != null ?  Company.fromJson(json['company']) : null;
   }
   @override
   User objectFromJson(Map<String,dynamic > json) => User.fromJson(json);
   
   @override
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data =  Map<String, dynamic>();
     data['id'] = this._id;
     data['name'] = this._name;
     data['username'] = this._username;
@@ -112,11 +112,11 @@ class Address {
     _suite = json['suite'];
     _city = json['city'];
     _zipcode = json['zipcode'];
-    _geo = json['geo'] != null ? new Geo.fromJson(json['geo']) : null;
+    _geo = json['geo'] != null ?  Geo.fromJson(json['geo']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data =  Map<String, dynamic>();
     data['street'] = this._street;
     data['suite'] = this._suite;
     data['city'] = this._city;
@@ -148,7 +148,7 @@ class Geo {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data =  Map<String, dynamic>();
     data['lat'] = this._lat;
     data['lng'] = this._lng;
     return data;
@@ -180,7 +180,7 @@ class Company {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data =  Map<String, dynamic>();
     data['name'] = this._name;
     data['catchPhrase'] = this._catchPhrase;
     data['bs'] = this._bs;

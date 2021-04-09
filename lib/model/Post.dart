@@ -22,7 +22,7 @@ class Post extends JsonDecoderObject<Post>{
   set body(String body) => _body = body;
 
   Post.fromJson(Map<String, dynamic> json) {
-    _userId = json['userId'];
+    _userId = json['userId'].toString();
     _id = json['id'];
     _title = json['title'];
     _body = json['body'];
